@@ -1,6 +1,6 @@
 // Avenova Global starter site interactions.
-// Replace the placeholder recipient below with an inbox you control before launch.
-const CONTACT_EMAIL = "REPLACE_WITH_YOUR_EMAIL@example.com";
+// Contact enquiries are prepared for the official Avenova Global business inbox.
+const CONTACT_EMAIL = "avenovaglobal@gmail.com";
 const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
 if (menuToggle && navLinks) {
@@ -20,10 +20,6 @@ const message = document.querySelector("#form-message");
 if (form) form.addEventListener("submit", event => {
   event.preventDefault();
   if (!form.reportValidity()) return;
-  if (CONTACT_EMAIL.includes("REPLACE_WITH_YOUR_EMAIL")) {
-    message.textContent = "Setup needed: replace the placeholder email in script.js with your real contact address, then test the form again.";
-    return;
-  }
   const data = new FormData(form);
   const subject = encodeURIComponent("Avenova Global project enquiry — " + data.get("project"));
   const body = encodeURIComponent("Name: " + data.get("name") + "\nEmail: " + data.get("email") + "\nProject type: " + data.get("project") + "\n\nProject details:\n" + data.get("details"));
