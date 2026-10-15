@@ -1,25 +1,32 @@
-# Avenova Global — Starter Website
+# Avenova Global Platform v1
 
-A responsive static landing page built around the Avenova Global master blueprint.
+A multi-page responsive website foundation for Avenova Global Organisation.
 
-## Brand system
-- Navy: `#0B192C`
-- Electric teal: `#00D2C4`
-- Silver: `#E2E8F0`
-- Typography: DM Sans + Manrope (Google Fonts; system fallbacks are included)
+## Pages and assets
+- `index.html` — main organisation website
+- `services.html` — service pathways, deliverables, and delivery boundaries
+- `styles.css` — shared responsive design system
+- `script.js` — mobile navigation, reduced-motion-aware reveal effects, year update, enquiry validation
+- `assets/favicon.svg` — vector favicon
 
-## Required before public launch
-1. Open `script.js` and replace `REPLACE_WITH_YOUR_EMAIL@example.com` with an inbox you control.
-2. Test the enquiry form on desktop and mobile. It uses `mailto:` and depends on the visitor having an email app configured; it is not a hosted form backend.
-3. Replace or add the organisation's verified contact details and any verified legal/business information.
-4. Confirm you have the right to use the Avenova name and logo in the intended markets.
-5. Review privacy, accessibility, and applicable legal requirements before collecting personal information.
-6. Check the final website on real devices and test every link.
+## Important limitations
+- Avenova is described as an independent initiative and **not yet legally registered**.
+- No clients, testimonials, or completed case studies are invented.
+- The enquiry form opens the visitor's email app using `mailto:`. It does not store submissions or send them to a server.
+- No authentication, database, CMS, payment processing, or custom backend is included. These need separate requirements, architecture, security planning, and configuration.
+- Google Fonts are optional; system font fallbacks are defined.
+- Service scope exclusions are explicit. Do not promise work beyond an agreed written scope.
 
-## Deploy with GitHub Pages
-1. Open this repository's **Settings → Pages**.
-2. Choose **Deploy from a branch**, select `main` and `/(root)`, then save.
-3. Wait for the Pages build to finish and use the URL GitHub provides.
+## Preview and free deployment
+Open `index.html` in a browser for a quick preview. For free deployment, enable GitHub Pages in repository settings and select the intended branch and root directory. Verify the published URL on mobile and desktop before calling the site live.
 
-## Accuracy note
-The 21-business portfolio is presented as a planned ecosystem from the supplied blueprint, not as a claim that every venture is already operating. This page does not claim registration, clients, certifications, or revenue that have not been verified.
+## Pre-launch checklist
+- [ ] Review public wording and contact details.
+- [ ] Test mobile navigation with keyboard and touch.
+- [ ] Test the enquiry form: it should open an email draft addressed to `avenovaglobal@gmail.com`.
+- [ ] Verify mobile and desktop layouts, links, focus states, and browser console.
+- [ ] Add a privacy notice if a future version collects personal data.
+- [ ] Add real portfolio examples only after work exists and is approved for publication.
+
+## Next phase: advanced platform
+A client portal, stored enquiries, CRM, SaaS functionality, authentication, database, or analytics should be designed as a separate system. Define data ownership, access controls, retention, backups, monitoring, testing, and operating costs before implementation. Keep paid services disabled until the founder approves any cost.
